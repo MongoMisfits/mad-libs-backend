@@ -56,6 +56,7 @@ We’ll be building the API from scratch, which means the templates will be orig
     - Includes form component
 - Form
     - Allows users to enter a name and submit their madlib to be saved in the database
+    - Allows users to enter their own stories with selected inputs
 
 ## Additional Libraries
 
