@@ -1,0 +1,111 @@
+[
+    {
+        "user": "brian99na",
+        "template": [
+            {
+                "title": "Talk Like a Pirate",
+                "blanks": [
+                  "school",
+                  "cool",
+                  "run",
+                  "early",
+                  "pencil",
+                  "skinny",
+                  "mountains",
+                  "oceans",
+                  "pennies",
+                  "leg",
+                  "tree",
+                  "house",
+                  "desk",
+                  "sun",
+                  "teeth"
+                ],
+                "value": [
+                  "Ye can always pretend to be a bloodthirsty ",
+                  ", threatening everyone by waving yer ",
+                  " sword in the air, but until ye learn to ",
+                  " like a pirate, ye'll never be ",
+                  " accepted as an authentic ",
+                  ". So here's what ye do: Cleverly work into yer daily conversations ",
+                  " pirate phrases such as \"Ahoy there, ",
+                  ", \"\"Avast, ye ",
+                  ",\" and \"Shiver me ",
+                  ".\" Remember to drop all yer gs when ye say such words as sailin', spittin', and fightin'. This will give ye a/an ",
+                  " start to being recognized as a swashbucklin' ",
+                  ". Once ye have the lingo down pat, it helps to wear a three-cornered ",
+                  " on yer head, stash a/an ",
+                  " in yer pants, and keep a/an ",
+                  " perched atop yer ",
+                  ". Aye, now ye be a real pirate!",
+                  0
+                ]
+              }
+        ]
+    },
+    {
+        "user": "yeAung",
+        "template": [
+            {
+                "title": "Dragon Ball",
+                "blanks": [
+                    "tree",
+                    "toasted",
+                    "fire",
+                    "plant",
+                    "slow",
+                    "bottle",
+                    "quick",
+                    "cup",
+                    "assaulted",
+                    "phone"
+                ],
+                "value": [
+                    "Long ago, the ",
+                    " Frieza ",
+                    " Planet ",
+                    " , homeworld of the ",
+                    " Saiyan race. But not all perished. One survivor ",
+                    " and was raised by the people of Earth. His name was Goku. Years later, Goku fought Frieza on the planet ",
+                    " . There, Goku ",
+                    " the true power of his ",
+                    " by turning into a Super Saiyan.",
+                    "With his newfound strength, Goku ",
+                    " his nemesis, and made the ",
+                    " a better place.",
+                    0
+                    ]
+                }
+        ]
+    },
+    {
+        "user": "tomFair",
+        "template": [
+            {
+            "title": "Rick and Morty",
+            "blanks": [
+                "computer",
+                "cold",
+                "bakery",
+                "chilling",
+                "hungry",
+                "climb",
+                "aggressive",
+                "cereal"
+            ],
+            "value": [
+                "Rick and Morty ",
+                " the ",
+                " corners of the multiverse. From meeting ",
+                " versions of themselves to ",
+                " off alien monstrosities, Rick and Morty's adventures are the stuff of legends. But when a ",
+                " version of Morty plots the downfall of everything, the ",
+                " of a deeply ",
+                " family are tested, and the ",
+                " reality are shaken to their core.",
+                0
+                ]
+            }
+        ]
+    }
+]

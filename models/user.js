@@ -1,5 +1,5 @@
 const mongoose = require('../db/connection')
-const Template = require('./templateSchema')
+const Template = require('./template')
 const templateSchema = mongoose.model('Template').schema
 
 const userSchema = new mongoose.Schema({

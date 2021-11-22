@@ -1,12 +1,25 @@
 const Template = require("../models/template");
-const templateData = require("./seedData.json");
+const madLibsData = require("./madLibsData.json");
+const User = require('../models/user');
+const userData = require('./userData.json')
 
 Template.deleteMany({}).then(()=>{
-    Template.insertMany(templateData, (err)=>{
+    Template.insertMany(madLibsData, (err)=>{
         if(err){
             console.log(err)
         }else{
             console.log('Templates Added!')
+        }
+        process.exit()
+    })
+}).catch(err => console.log(err))
+
+User.deleteMany().then(() => {
+    User.insertMany(userData, (err) => {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log('User Data Added!')
         }
         process.exit()
     })
