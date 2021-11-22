@@ -1,6 +1,5 @@
-
-const Template = require("../models/template")
-const templateData = require('./seedData.json')
+const Template = require("../models/template");
+const templateData = require("./seedData.json");
 
 // Template.deleteMany({}).then(()=>{
 //     Template.insertMany(templateData, (err)=>{
@@ -13,9 +12,13 @@ const templateData = require('./seedData.json')
 //     })
 // }).catch(err => console.log(err))
 
-const setUp = async ()=>{
-    // await Template.deleteMany();
-    await Template.insertMany(templateData)
-    process.exit()
-}
-setUp()
+const setUp = async () => {
+  try {
+    await Template.deleteMany();
+    await Template.insertMany(templateData);
+    process.exit();
+  } catch (err) {
+    console.log(err);
+  }
+};
+setUp();
