@@ -14,7 +14,7 @@ const templateData = require('./seedData.json')
 // }).catch(err => console.log(err))
 
 const setUp = async ()=>{
-    await Template.deleteMany();
+    // await Template.deleteMany();
     await Template.insertMany(templateData)
     process.exit()
 }
