@@ -6,4 +6,5 @@ const templateSchema = new mongoose.Schema({
     value: Array
 })
 
-module.exports = mongoose.model('Template', templateSchema)
+const Template = mongoose.model('Template', templateSchema)
+module.exports = Template

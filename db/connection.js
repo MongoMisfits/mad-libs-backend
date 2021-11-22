@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 mongoose.Promise = Promise
-const MONGO_PASS = process.env.MONGO_PASS
 
 let mongoURI = ''
 if(process.env.MONGODB_URI){
@@ -8,9 +7,12 @@ if(process.env.MONGODB_URI){
 }else{
     mongoURI = 'mongodb://localhost/madlibs-templates'
 }
-mongoose.connect(mongoURI, { useNewUrlParser: true}, ()=>{
-    console.log('Successfully connected to MongoDb')
-})
+mongoose.connect(mongoURI, {useNewUrlParser: true})
+ .then(instance => {
+     console.log(`Connected to db: ${instance.connections[0].name}`)
+ }).catch(error => {
+     console.log("Connetion failed", error)
+ })
 
 module.exports = mongoose
 
