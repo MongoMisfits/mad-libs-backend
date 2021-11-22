@@ -15,7 +15,6 @@ app.get('/', (req,res)=>{
     res.send('This is the backend')
 })
 
-app.listen(PORT, ()=>{
-    console.log(`We running on Port: ${PORT}` )
-})
+app.set('port', PORT)
+app.listen(app.get('port'), () => console.log(`PORT: ${app.get("port")} 🌟`))
 
