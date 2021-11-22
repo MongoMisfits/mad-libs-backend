@@ -7,6 +7,7 @@ if(process.env.MONGODB_URI){
 }else{
     mongoURI = 'mongodb://localhost/madlibs-templates'
 }
+
 mongoose.connect(mongoURI, {useNewUrlParser: true})
  .then(instance => {
      console.log(`Connected to db: ${instance.connections[0].name}`)
