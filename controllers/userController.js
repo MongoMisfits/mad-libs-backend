@@ -9,4 +9,12 @@ router.get('/', (req, res)=>{
     })
 })
 
+router.post('/', (req, res) => {
+    User.create(req.body).then(() => {
+        User.find().then((all) => {
+            res.status(201).json(all)
+        })
+    })
+})
+
 module.exports = router
