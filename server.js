@@ -11,6 +11,9 @@ app.use(express.json())
 const templateController = require('./controllers/templateController')
 app.use('/templates', templateController)
 
+const userController = require('./controllers/userController')
+app.use('/users', userController)
+
 app.get('/', (req,res)=>{
     res.send('This is the backend')
 })
