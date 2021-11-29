@@ -3,7 +3,7 @@
         "user": "brian99na",
         "template": [
             {
-                "title": "Talk Like a Pirate",
+                "title": "Star Wars",
                 "blanks": [
                   "school",
                   "cool",
@@ -37,8 +37,7 @@
                   " on yer head, stash a/an ",
                   " in yer pants, and keep a/an ",
                   " perched atop yer ",
-                  ". Aye, now ye be a real pirate!",
-                  0
+                  ". Aye, now ye be a real pirate!"
                 ]
               }
         ]
