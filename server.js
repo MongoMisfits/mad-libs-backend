@@ -18,6 +18,6 @@ app.get('/', (req,res)=>{
     res.send('This is the backend')
 })
 
-app.set('port', PORT)
+app.set('port', PORT || 5000)
 app.listen(app.get('port'), () => console.log(`PORT: ${app.get("port")} 🌟`))
 

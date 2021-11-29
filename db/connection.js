@@ -2,11 +2,17 @@ const mongoose = require('mongoose')
 mongoose.Promise = Promise
 
 let mongoURI = ''
-if(process.env.MONGODB_URI){
-    mongoURI = process.env.MONGODB_URI
-}else{
-    mongoURI = 'mongodb://localhost/madlibs-templates'
-}
+// if(process.env.MONGODB_URI){
+//     mongoURI = process.env.MONGODB_URI
+// }else{
+//     mongoURI = 'mongodb://localhost/madlibs-templates'
+// }
+
+if (process.env.NODE_ENV === "production") {
+    mongoURI = process.env.DB_URL;
+  } else {
+    mongoURI = "mongodb://localhost/madlibs-templates";
+  }
 
 mongoose.connect(mongoURI, {useNewUrlParser: true})
  .then(instance => {
